@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>GX: Gifting Experiences</title>
+  </head>
+  <body>
+    <header class="main">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="assets/images/giftgxTRwide.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a class="btn btn-default" href="#" role="button">About</a>
+          <a class="btn btn-default" href="submit.html" role="button">Submit a Gift</a>
+        </div>
+      </div>
+    </header>
+
+<div class="container col-md-8 col-md-offset-2">
+    <form action="index.html" method="get" >
+    <label for="weather" name="weather" value=""> If your gift will happen in the next week: <br>
+    <div class="form-group">
+      <label for="date" name="date" value=""> In the next week, what day will you gift?:</label>
+      <select class="date" id ="date" name="date">
+        <option value="" disabled selected > Select </option>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="zip" name="zip" value=""> And zip code:</label>
+      <input id="zip" type="text" pattern="[0-9]{5}" ></input>
+    </div>
+    </label>
+    <label for="weather" name="weather" value=""> If your gift day is ten days out or more: <br>
+      <div class="form-group">
+        <label for="enviro">Pick your environment:</label>
+        <select class="enviro" id="enviro" name="enviro">
+          <option value="" disabled selected > Select </option>
+          <option value="in">Indoors</option>
+          <option value="out">Outdoors</option>
+        </select>
+      </div>
+    </label>
+  <div class="form-group">
+    <label for="ActivityLevel"> How active can your gift be?:</label>
+    <select class="ActivityLevel" id="active" name="active">
+      <option value="" disabled selected > Select </option>
+      <option value="act">Active</option>
+      <option value="sed">Sedentary</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="participation"> Are you participating?:</label>
+    <select class="Distance" id="distance" name="distance">
+      <option value="" disabled selected > Select </option>
+      <option value="together">Yes, I'll be there!</option>
+      <option value="apart">No.</option>
+    </select>
+  </div>
+  <button type="submit" name="submit" value="submit" class="btn btn-default" id="">Get Gifts</button>
+  <button type="reset" name="reset" value="reset" class="btn btn-default">Reset</button>
+  </form>
+</div>
+
+<div><a id="getValues">Test submit- console</a></div>
+
+
+<div class="row">
+  <div class="container-fluid">
+    <footer class="footer">
+          <img class="footerLogo" src="assets/images/giftgxTRcopy.png">
+    </footer>
+
+  </div>
+  </div>
+
+<!-- jQuery and JS file -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script type ="text/javascript" src="assets/main.js"></script>
+
+  </body>
+</html>
