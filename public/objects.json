@@ -1,0 +1,44 @@
+[
+  {
+    "title":"Picnic",
+    "environment":"out",
+    "cost":"$",
+    "activeLevel":"both",
+    "summary":"Grab a blanket, get outside. Bonus: bring food, name clouds, people watch",
+  },
+  {
+    "title":"Travel",
+    "environment":"out",
+    "cost":"$$$$$",
+    "activeLevel":"act",
+    "summary":"Get in the car, grab your passport",
+  }
+  {
+    "title":"Movie Night",
+    "environment":"in",
+    "cost":"$",
+    "activeLevel":"both",
+    "summary":"Rent, owned, either works",
+  }
+  {
+    "title":"Game Night",
+    "environment":"in",
+    "cost":"$",
+    "activeLevel":"both",
+    "summary":"May the best win",
+  }
+  {
+    "title":"Minute to Win it",
+    "environment":"out",
+    "cost":"$",
+    "activeLevel":"both",
+    "summary":"Various ideas",
+  }
+  {
+    "title":"more",
+    "environment":"out",
+    "cost":"$",
+    "activeLevel":"both",
+    "summary":"more",
+  }
+]
