@@ -59,8 +59,15 @@ function populateResults(weatherOutcome) {
     console.log(weatherOutcome)
     console.log(activityLevel)
     console.log(distance)
-    $.getScript("objects.js", function(data){
-   alert("Script loaded but not necessarily executed.");
-     console.log(data)
+    $.get("objects.json")
+    .then(function(json){
+     console.log("got objects.json")
+     console.log(json)
+     console.log(json["0"].activeLevel)
+     for (var i = 0; i < json.length; i++){
+       if ((json[i].activeLevel === activityLevel ||  json[i].activeLevel === "both" )
+        && ( json[i].environment === weatherOutcome ||  json[i].environment === "both" ))
+        console.log(json[i].title)
+     }
    })
 }
