@@ -64,11 +64,26 @@ function populateResults(weatherOutcome) {
      console.log("got objects.json")
      console.log(json)
      console.log(json["0"].activeLevel)
+     var count = 0
      for (var i = 0; i < json.length; i++){
        if ((json[i].activeLevel === activityLevel ||  json[i].activeLevel === "both" )
         && ( json[i].environment === weatherOutcome ||  json[i].environment === "both" ))
+        count++
         console.log(json[i].title)
-        $('.results').append(json[i].title)
+        $('.results').append("<li> <a href='results.html'>" + json[i].title + "</a></li>")
+        // "<a href='results.html'>" + json[i].title + "</a>" +
      }
-   })
+     if (count > 1) {
+       $('.gotresult').append("Gift like this:")
+       var eventList = document.querySelectorAll(".results, li")
+       console.log(eventList)
+       for(var i =0; i < eventList.length; i++ ){
+       eventList[i].addEventListener('click', function(event){
+         event.stopPropagation()
+         window.localStorage.setItem("giftTitle", this.innerHTML)
+         console.log(this.innerHTML)
+      })
+    }
+  }
+  })
 }

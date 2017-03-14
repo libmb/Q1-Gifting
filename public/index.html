@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/animate.css">
     <title>GX: Gifting Experiences</title>
   </head>
   <body>
@@ -28,7 +29,8 @@
 
 <div class="container col-md-8 col-md-offset-2">
     <form action="index.html" method="get" >
-    <label for="weather" name="weather" value=""> If your gift will happen in the next week: <br>
+    <label for="weather" name="weather" value=""> Gifting this week: <br>
+    <div class="border">
     <div class="form-group">
       <label for="date" name="date" value=""> In the next week, what day will you gift?:</label>
       <select class="date" id ="date" name="date">
@@ -41,14 +43,15 @@
         <option value="6">Saturday</option>
         <option value="7">Sunday</option>
       </select>
-    </div>
+  </div>
     <div class="form-group">
-      <label for="zip" name="zip" value=""> And zip code:</label>
-      <input id="zip" type="text" pattern="[0-9]{5}" ></input>
+      <label for="zip" name="zip" value=""> Where will you gift?:</label>
+      <input id="zip" type="text" pattern="[0-9]{5}" placeholder="zipcode"></input>
     </div>
+  </div>
     </label>
-    <label for="weather" name="weather" value=""> If your gift day is ten days out or more: <br>
-      <div class="form-group">
+    <label for="weather" name="weather" value=""> Or, gift later: <br>
+      <div class="form-group border">
         <label for="enviro">Pick your environment:</label>
         <select class="enviro" id="enviro" name="enviro">
           <option value="" disabled selected > Select </option>
@@ -79,10 +82,10 @@
 </div>
 
 <div><a id="getValues">Test submit- console</a></div>
+<h1 class="gotresult"></h1>
+<ul class="results">
 
-<div class="results">
-    HEY!
-</div>
+</ul>
 
 <div class="row">
   <div class="container-fluid">
