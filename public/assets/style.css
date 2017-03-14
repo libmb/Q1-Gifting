@@ -39,9 +39,12 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-
 }
 
+.results {
+  border: 1px solid black;
+  background-color: grey
+}
 
 .footerLogo {
   height: 50px;

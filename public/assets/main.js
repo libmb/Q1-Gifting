@@ -68,6 +68,7 @@ function populateResults(weatherOutcome) {
        if ((json[i].activeLevel === activityLevel ||  json[i].activeLevel === "both" )
         && ( json[i].environment === weatherOutcome ||  json[i].environment === "both" ))
         console.log(json[i].title)
+        $('.results').append(json[i].title)
      }
    })
 }
