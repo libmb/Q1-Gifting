@@ -55,26 +55,27 @@ function getWeatherForcast(coordinates) {
 // or will this be a .then on getWeatherForcast
 function populateResults(weatherOutcome) {
     var activityLevel = $('#active').val()
-    var distance = $('#distance').val()
+    // var distance = $('#distance').val()
     console.log(weatherOutcome)
-    console.log(activityLevel)
-    console.log(distance)
+    // console.log(distance)
     $.get("objects.json")
     .then(function(json){
-     console.log("got objects.json")
+      console.log("got objects.json")
      console.log(json)
-     console.log(json["0"].activeLevel)
      var count = 0
      for (var i = 0; i < json.length; i++){
-       if ((json[i].activeLevel === activityLevel ||  json[i].activeLevel === "both" )
-        && ( json[i].environment === weatherOutcome ||  json[i].environment === "both" ))
+       console.log("loop title is: " + json[i].title)
+       console.log("loop enviro is: " + json[i].environment)
+       console.log("loop weatherChoice is: " + weatherOutcome)
+       if ((json[i].activeLevel === activityLevel || json[i].activeLevel === "both" )
+        && ( json[i].environment === weatherOutcome ||  json[i].environment === "both" )) {
         count++
-        console.log(json[i].title)
         $('.results').append("<li> <a href='results.html'>" + json[i].title + "</a></li>")
         // "<a href='results.html'>" + json[i].title + "</a>" +
+      }
      }
      if (count > 1) {
-       $('.gotresult').append("Gift like this:")
+       $('.gotresult').append("Plan a gift:")
        var eventList = document.querySelectorAll(".results, li")
        console.log(eventList)
        for(var i =0; i < eventList.length; i++ ){
