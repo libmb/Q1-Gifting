@@ -117,3 +117,27 @@ page-wrap {
 .mainTools, .mainTogether, .mainSend, .mainBonus {
   font-size: 20px;
 }
+
+.family{
+  width: 100%;
+}
+
+/*============= About & Submit Page ===========*/
+.pageStyle {
+  width: 75%;
+  margin: 15px;
+  color: #363636;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.pageStyle h2, .pageStyle p, .pageStyle li {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}

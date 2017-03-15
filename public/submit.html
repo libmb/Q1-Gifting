@@ -17,48 +17,67 @@
       <div class="row">
         <div class="col-md-12">
           <a class="btn btn-default" href="index.html" role="button">Home</a>
-          <a class="btn btn-default" href="#" role="button">About</a>
+          <a class="btn btn-default" href="about.html" role="button">About</a>
         </div>
       </div>
     </header>
 
+  <h1 class="pageStyle"> Have a great experiential gift idea? </h1>
+  <p class="pageStyle"> If you have an idea you'd like to submit for GX, please submit the details here.
+    If the idea is accepted, the gift details page will be tagged with your provided name, if you provide one. </p>
+
 <div class="container col-md-8 col-md-offset-2">
-    <form action="index.html" method="get">
+
+      <form method="post" action="mailto:givinggx@gmail.com">
+
       <div class="form-group">
-        <label for="ActivityLevel"> What is the gift environment:</label>
-        <select class="ActivityLevel" name="active">
+        <label for="tools"> Your name:</label> <br>
+          <input id="name" type="text" placeholder="First Last"></input>
+      </div>
+
+      <div class="form-group">
+        <label for="enviro"> What is the gift environment:</label>
+        <select class="enviro" name="enviro">
           <option value="" disabled selected > Select </option>
-          <option value="active">Indoors</option>
-          <option value="sedentary">Outdoors</option>
-          <option value="sedentary">Either</option>
+          <option value="inside">Indoors</option>
+          <option value="outside">Outdoors</option>
+          <option value="both">Either</option>
         </select>
       </div>
+
   <div class="form-group">
     <label for="ActivityLevel"> What is the activity level?:</label>
-    <select class="ActivityLevel" name="active">
+    <select class="activityLevel" name="active">
       <option value="" disabled selected > Select </option>
       <option value="active">Active</option>
       <option value="sedentary">Sedentary</option>
-      <option value="sedentary">Either</option>
+      <option value="both">Either</option>
     </select>
   </div>
+
   <div class="form-group">
-    <label for="participation"> Does it require giftee participation?:</label>
-    <select class="ActivityLevel" name="active">
+    <label for="cost"> What do you think the cost range is:</label>
+    <select class="cost" name="cost">
       <option value="" disabled selected > Select </option>
-      <option value="active">Yes</option>
-      <option value="sedentary">No</option>
+      <option value="cost1">$</option>
+      <option value="cost2">$$</option>
+      <option value="cost3">$$$</option>
+      <option value="cost4">$$$$</option>
+      <option value="cost5+">$$$$+</option>
     </select>
   </div>
+
   <div class="form-group">
-    <label for="tools"> What's needed?:</label>
+    <label for="tools"> What's needed?:</label> <br>
       <textarea id="tools" name="tools" rows="8" cols="80">List tools/supplies here.</textarea>
   </div>
+
   <div class="form-group">
-    <label for="tools"> Tell us about the Gift</label>
-      <textarea id="tools" name="tools" rows="8" cols="80">What are you doing? What instructions are needed? How is this an experiece? Have you tried this?</textarea>
+    <label for="details"> Tell us about the Gift</label> <br>
+      <textarea id="details" name="details" rows="8" cols="80">What are you doing? What instructions are needed? How is this an experiece? Have you tried this?</textarea>
   </div>
-  <button type="submit" name="submit" value="submit" class="btn btn-default">Get Gifts</button>
+
+  <button type="submit" name="submit" value="Send Email" class="btn btn-default">Submit Gift Idea</button>
   </form>
 </div>
 
@@ -76,7 +95,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-  <script type ="text/javascript" src="assets/main.js"></script>
+  <script type ="text/javascript" src="assets/email.js"></script>
 
   </body>
 </html>
