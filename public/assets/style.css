@@ -69,8 +69,6 @@ page-wrap {
     border: 1px solid black;
 }
 
-.borderless {}
-
 .container {
     margin-bottom: 35px;
     width: 100%;
@@ -92,9 +90,8 @@ page-wrap {
 }
 
 .results a:hover {
-    color: #09487A;
+    color: #EAEAEA;
     text-decoration: none;
-    font-size: 120%;
 }
 
 .botSpace {
