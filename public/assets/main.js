@@ -97,8 +97,8 @@ function populateResults(weatherOutcome) {
                 console.log("loop title is: " + json[i].title)
                 console.log("loop enviro is: " + json[i].environment)
                 console.log("loop weatherChoice is: " + weatherOutcome)
-                if ((json[i].activeLevel === activityLevel || json[i].activeLevel === "both") &&
-                    (json[i].environment === weatherOutcome || json[i].environment === "both")) {
+                if ((activityLevel === "both" || json[i].activeLevel === activityLevel || json[i].activeLevel === "both") &&
+                    (weatherOutcome === "both" || json[i].environment === weatherOutcome || json[i].environment === "both")) {
                     count++
                     $('.results').append("<li> <a href='results.html'>" + json[i].title + "</a></li>")
                     // "<a href='results.html'>" + json[i].title + "</a>" +

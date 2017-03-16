@@ -8,7 +8,7 @@ This is an app that will allow a user to filter for experiential gifts. The gift
 
 ## API
 - [DarkSky](https://darksky.net/dev/)
-- [Google Geocaching](https://developers.google.com/maps/documentation/geocoding/start)
+- [Google Geocode](https://developers.google.com/maps/documentation/geocoding/start)
 
 ## Technology
 - Javascript
