@@ -15,6 +15,6 @@ This is an app that will allow a user to filter for experiential gifts. The gift
 - HTML
 - CSS
 - AJAX
-- Illustrator
+- Sketch
 - JSON
 - Bootstrap
