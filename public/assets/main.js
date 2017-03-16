@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('#getValues').click(function(){
-    // Make on submit
+    $('.results').text("")
+    $('.gotresult').text("")
     var input = $('#zip').val()
     console.log(input)
     if (input === "" || input === "null" || input === "undefined") {
@@ -12,7 +13,36 @@ $(document).ready(function() {
       getWeatherLocation(input)
     }
   })
+  $('#reset').click(function(){
+    $('.results').text("")
+    $('.gotresult').text("")
+  })
+  // call get day here
+  getCurrentDay()
 })
+
+// Date Select Box
+function getCurrentDay() {
+  var currentDate = new Date();
+  console.log(currentDate)
+  var currentDayDigit = currentDate.getDay();
+  console.log(currentDayDigit)
+  var weekday = new Array(7);
+  weekday[0] =  "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+  var currentDay = weekday[currentDate.getDay()];
+  console.log(currentDay)
+  for (var i = currentDayDigit, value = 0; value < 7; i++, value++) {
+    $('.date').append("<option value='" + value + "'> " + weekday[i%7] + "</option>")
+    console.log("this is i " + i)
+    console.log("the value is " + value)
+  }
+  }
 
 // IF date is entered
 function getWeatherLocation(input) {

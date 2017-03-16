@@ -10,59 +10,71 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GX: Gifting Experiences</title>
   </head>
   <body>
     <header class="main">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="container">
+
+      <div>
+        <div class="col-md-8 col-md-offset-3">
           <img src="assets/images/giftgxTRwide.png">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
+
+        <div>
+          <div class="col-md-8 col-md-offset-3">
+            <h1>The next time you gift, make it an experience...</h1>
+          </div>
+      </div>
+
+      <div>
+      <div class="col-md-7 col-md-offset-5">
           <a class="btn btn-default" href="about.html" role="button">About</a>
           <a class="btn btn-default" href="submit.html" role="button">Submit a Gift</a>
         </div>
       </div>
+
+    </div>
     </header>
+
 <div class="page-wrap">
 
  <!-- ================== FORM =============== -->
-<!-- <div class="container"> -->
+<div class="container">
+
+  <section class="col-md-12 mainIndex">
+
+
+
     <form action="index.html" method="get">
 
-    <section class="col-md-12">
+
       <!-- Sizing for the full form at mobile -->
 
-    <label for="weather" name="weather" value="" class="strong"> Gift this week:<br>
-    <div class="borderless">
+    <label for="weather" name="weather" value="" class="strong"> 		&rarr; Gift this week:<br>
+    <div class="borderless tab">
       <div>
         <label for="date" name="date" value=""> In the next week, what day will you gift?:</label>
         <select class="date" id ="date" name="date">
           <option value="" disabled selected > Select </option>
-          <option value="1">Monday</option>
-          <option value="2">Tuesday</option>
-          <option value="3">Wednesday</option>
-          <option value="4">Thursday</option>
-          <option value="5">Friday</option>
-          <option value="6">Saturday</option>
-          <option value="7">Sunday</option>
+            <!-- get day populates here -->
         </select>
       </div>
     </div>
-  </section>
 
-  <section class="col-md-12">
-    <div class="borderless">
+
+  <section class="botSpace">
+    <div class="borderless tab">
       <label for="zip" name="zip" value=""> Where will you gift?:</label>
       <input id="zip" type="text" pattern="[0-9]{5}" placeholder="zipcode"></input>
     </div>
   </section>
 
-  <section class="col-md-12">
-    <label for="weather" name="weather" value="" class="strong"> Or, gift later: <br>
-      <div class="borderless">
+  <section class="botSpace">
+    <label for="weather" name="weather" value="" class="strong"> &rarr; Or, gift later: <br>
+      <div class="borderless tab">
         <label for="enviro">Pick your environment:</label>
         <select class="enviro" id="enviro" name="enviro">
           <option value="" disabled selected > Select </option>
@@ -72,10 +84,10 @@
       </div>
     </label>
   </section>
-
-  <section class="col-md-12">
-    <label for="details" name="details" value="" class="strong"> Gift details: <br>
-    <div class="form-group">
+<div class="tab">
+  <section class="botSpace">
+    <label for="details" name="details" value="" class="strong"> &amp; Gift details: <br>
+    <div class="form-group tab">
       <label for="ActivityLevel"> How active can your gift be?:</label>
       <select class="ActivityLevel" id="active" name="active">
         <option value="" disabled selected > Select </option>
@@ -84,26 +96,31 @@
       </select>
     </div>
   </section>
+</div>
 
-  <section class="col-md-12">
-  <div><a class="btn btn-default" id="getValues" role="button">Get Gifts</a></div>
-    <button type="reset" name="reset" value="reset" class="btn btn-default">Reset</button>
+  <section class="botSpace">
+    <a class="btn btn-default" id="getValues" role="button">Get Gifts</a>
+    <button type="reset" name="reset" value="reset" id="reset" class="btn btn-default">Reset</button>
   </section>
 
-  <section class="col-md-12">
+
+
+  <section class="col-sm-12 .col-md-4">
   <h1 class="gotresult"></h1>
   <ul class="results">
   </ul>
   </section>
 
   </form>
-<!-- </div> -->
+  </section>
+</div>
   <!-- =================== End Form ============= -->
 
 </div>
 <!-- ============== Footer ============= -->
 <footer class="site-footer">
-  <img class="footerLogo" src="assets/images/giftgxTRcopy.png">
+  <img class="footerLogo pull-right img-responsive" src="assets/images/giftgxTRcopy.png">
+</section>
 </footer>
 
 <!-- jQuery and JS file -->
