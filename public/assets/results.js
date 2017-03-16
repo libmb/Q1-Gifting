@@ -1,8 +1,6 @@
 $(document).ready(function() {
     var aTagGift = localStorage.getItem('giftTitle');
-    console.log(aTagGift)
     var currentGift = aTagGift.substring(24, aTagGift.length - 4)
-    console.log(currentGift)
     populatePage(currentGift)
 })
 

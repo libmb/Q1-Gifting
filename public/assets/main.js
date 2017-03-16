@@ -3,7 +3,6 @@ $(document).ready(function() {
         $('.results').text("")
         $('.gotresult').text("")
         var input = $('#zip').val()
-        console.log(input)
         if (input === "" || input === "null" || input === "undefined") {
             // check in zip was entered for weather information
             var weatherOutcome = $('#enviro').val()
@@ -24,9 +23,7 @@ $(document).ready(function() {
 // Date Select Box
 function getCurrentDay() {
     var currentDate = new Date();
-    console.log(currentDate)
     var currentDayDigit = currentDate.getDay();
-    console.log(currentDayDigit)
     var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -36,11 +33,8 @@ function getCurrentDay() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     var currentDay = weekday[currentDate.getDay()];
-    console.log(currentDay)
     for (var i = currentDayDigit, value = 0; value < 7; i++, value++) {
         $('.date').append("<option value='" + value + "'> " + weekday[i % 7] + "</option>")
-        console.log("this is i " + i)
-        console.log("the value is " + value)
     }
 }
 
@@ -54,7 +48,6 @@ function getWeatherLocation(input) {
             var coordinates = lat + ',' + long
             // else use value of input ----out vs in
             getWeatherForcast(coordinates)
-            console.log("coordinates " + coordinates)
         })
 }
 
@@ -65,19 +58,15 @@ function getWeatherForcast(coordinates) {
     $.get(url)
         .then(function(data) {
             var dateInput = $('#date').val()
-            console.log("day of the week: " + dateInput)
             var iconImg = data.daily.data[dateInput].icon
             var weatherHigh = data.daily.data[dateInput].apparentTemperatureMax
-            console.log("high temp: " + weatherHigh)
             var precipPoss = data.daily.data[dateInput].precipProbability
-            console.log("chance of precip:" + precipPoss)
             var weatherOutcome = ""
             if (weatherHigh > "65" && precipPoss <= "0") {
                 weatherOutcome = "out"
             } else {
                 weatherOutcome = "in"
             }
-            console.log(weatherOutcome, iconImg)
             populateResults(weatherOutcome)
         })
 }
@@ -86,17 +75,11 @@ function getWeatherForcast(coordinates) {
 function populateResults(weatherOutcome) {
     var activityLevel = $('#active').val()
     // var distance = $('#distance').val()
-    console.log(weatherOutcome)
     // console.log(distance)
     $.get("objects.json")
         .then(function(json) {
-            console.log("got objects.json")
-            console.log(json)
             var count = 0
             for (var i = 0; i < json.length; i++) {
-                console.log("loop title is: " + json[i].title)
-                console.log("loop enviro is: " + json[i].environment)
-                console.log("loop weatherChoice is: " + weatherOutcome)
                 if ((activityLevel === "both" || json[i].activeLevel === activityLevel || json[i].activeLevel === "both") &&
                     (weatherOutcome === "both" || json[i].environment === weatherOutcome || json[i].environment === "both")) {
                     count++
@@ -107,12 +90,10 @@ function populateResults(weatherOutcome) {
             if (count > 1) {
                 $('.gotresult').append("Plan a gift:")
                 var eventList = document.querySelectorAll(".results, li")
-                console.log(eventList)
                 for (var i = 0; i < eventList.length; i++) {
                     eventList[i].addEventListener('click', function(event) {
                         event.stopPropagation()
                         window.localStorage.setItem("giftTitle", this.innerHTML)
-                        console.log(this.innerHTML)
                     })
                 }
             }
