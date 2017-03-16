@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!-- jQuery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
@@ -8,72 +9,73 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/animate.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GX: Gifting Experiences</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="main">
-      <div class="container">
+        <div class="container">
 
-      <div>
-        <div class="col-md-8 col-md-offset-3">
-          <img src="assets/images/giftgxTRwide.png">
+            <div>
+                <div class="col-md-8 col-md-offset-3">
+                    <img src="assets/images/giftgxTRwide.png">
+                </div>
+            </div>
+
+            <div>
+                <div class="col-md-8 col-md-offset-3">
+                    <h1>The next time you gift, make it an experience...</h1>
+                </div>
+            </div>
+
+            <div>
+                <div class="col-md-7 col-md-offset-5">
+                    <a class="btn btn-default" href="about.html" role="button">About</a>
+                    <a class="btn btn-default" href="submit.html" role="button">Submit a Gift</a>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-        <div>
-          <div class="col-md-8 col-md-offset-3">
-            <h1>The next time you gift, make it an experience...</h1>
-          </div>
-      </div>
-
-      <div>
-      <div class="col-md-7 col-md-offset-5">
-          <a class="btn btn-default" href="about.html" role="button">About</a>
-          <a class="btn btn-default" href="submit.html" role="button">Submit a Gift</a>
-        </div>
-      </div>
-
-    </div>
     </header>
 
-<div class="page-wrap">
+    <div class="page-wrap">
 
- <!-- ================== FORM =============== -->
-<div class="container">
+        <!-- ================== FORM =============== -->
+        <div class="container">
 
-  <section class="col-md-12 mainIndex">
-
-
-
-    <form action="index.html" method="get">
+            <section class="col-md-12 mainIndex">
 
 
-      <!-- Sizing for the full form at mobile -->
 
-    <label for="weather" name="weather" value="" class="strong"> 		&rarr; Gift this week:<br>
+                <form action="index.html" method="get">
+
+
+                    <!-- Sizing for the full form at mobile -->
+
+                    <label for="weather" name="weather" value="" class="strong"> 		&rarr; Gift this week:<br>
     <div class="borderless tab">
       <div>
         <label for="date" name="date" value=""> In the next week, what day will you gift?:</label>
-        <select class="date" id ="date" name="date">
+                    <select class="date" id="date" name="date">
           <option value="" disabled selected > Select </option>
-            <!-- get day populates here -->
+            <!-- get day populates here -->B
         </select>
-      </div>
+        </div>
     </div>
 
 
-  <section class="botSpace">
-    <div class="borderless tab">
-      <label for="zip" name="zip" value=""> Where will you gift?:</label>
-      <input id="zip" type="text" pattern="[0-9]{5}" placeholder="zipcode"></input>
-    </div>
-  </section>
+    <section class="botSpace">
+        <div class="borderless tab">
+            <label for="zip" name="zip" value=""> Where will you gift?:</label>
+            <input id="zip" type="text" pattern="[0-9]{5}" placeholder="zipcode"></input>
+        </div>
+    </section>
 
-  <section class="botSpace">
-    <label for="weather" name="weather" value="" class="strong"> &rarr; Or, gift later: <br>
+    <section class="botSpace">
+        <label for="weather" name="weather" value="" class="strong"> &rarr; Or, gift later: <br>
       <div class="borderless tab">
         <label for="enviro">Pick your environment:</label>
         <select class="enviro" id="enviro" name="enviro">
@@ -81,58 +83,57 @@
           <option value="in">Indoors</option>
           <option value="out">Outdoors</option>
         </select>
-      </div>
-    </label>
-  </section>
-<div class="tab">
-  <section class="botSpace">
-    <label for="details" name="details" value="" class="strong"> &amp; Gift details: <br>
+        </div>
+        </label>
+    </section>
+    <div class="tab">
+        <section class="botSpace">
+            <label for="details" name="details" value="" class="strong"> &amp; Gift details: <br>
     <div class="form-group tab">
       <label for="ActivityLevel"> How active can your gift be?:</label>
-      <select class="ActivityLevel" id="active" name="active">
+            <select class="ActivityLevel" id="active" name="active">
         <option value="" disabled selected > Select </option>
         <option value="act">Active</option>
         <option value="sed">Sedentary</option>
       </select>
     </div>
-  </section>
-</div>
+    </section>
+    </div>
 
-  <section class="botSpace">
-    <a class="btn btn-default" id="getValues" role="button">Get Gifts</a>
-    <button type="reset" name="reset" value="reset" id="reset" class="btn btn-default">Reset</button>
-  </section>
-
-
-
-  <section class="col-sm-12 .col-md-4">
-  <h1 class="gotresult"></h1>
-  <ul class="results">
-  </ul>
-  </section>
-
-  </form>
-  </section>
-</div>
-  <!-- =================== End Form ============= -->
-
-</div>
-<!-- ============== Footer ============= -->
-<footer class="site-footer">
-  <img class="footerLogo pull-right img-responsive" src="assets/images/giftgxTRcopy.png">
-</section>
-</footer>
-
-<!-- jQuery and JS file -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-
-  <script type ="text/javascript" src="assets/main.js"></script>
-
-  <!-- Bootstrap Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <section class="botSpace">
+        <a class="btn btn-default" id="getValues" role="button">Get Gifts</a>
+        <button type="reset" name="reset" value="reset" id="reset" class="btn btn-default">Reset</button>
+    </section>
 
 
-  </body>
+
+    <section class="col-sm-12 .col-md-4">
+        <h1 class="gotresult"></h1>
+        <ul class="results">
+        </ul>
+    </section>
+
+    </form>
+    </section>
+    </div>
+    <!-- =================== End Form ============= -->
+
+    </div>
+    <!-- ============== Footer ============= -->
+    <footer class="site-footer">
+        <img class="footerLogo pull-right img-responsive" src="assets/images/giftgxTRcopy.png">
+        </section>
+    </footer>
+
+    <!-- jQuery and JS file -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/main.js"></script>
+
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>

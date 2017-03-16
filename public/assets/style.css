@@ -1,64 +1,64 @@
-
 /*Custom*/
 
 * {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 html, body {
-  width: 100%;
+    width: 100%;
 }
 
 header {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 
 /*===== Footer Stuff*/
 
 page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -80px;
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -80px;
 }
 
 .site-footer {
-  height: 80px;
-  width: 100%;
-  content: "";
-  display: block;
+    height: 80px;
+    width: 100%;
+    content: "";
+    display: block;
 }
+
 .site-footer {
-  background: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .footerLogo {
-  height: 50px;
+    height: 50px;
 }
+
 
 /*===== End Footer */
 
 .fullscreen {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .mainIndex {
-  /*margin-left: 15%;
+    /*margin-left: 15%;
   margin-top: 5%;*/
 }
 
 .strong {
-  font-weight: bold;
-  font-size: 25px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-
 .main img {
-  height: 80px;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 0 auto;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 auto;
 }
 
 .label {
@@ -66,81 +66,83 @@ page-wrap {
 }
 
 .border {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
-.borderless {
-
-}
+.borderless {}
 
 .container {
-  margin-bottom: 35px;
-  width: 100%;
+    margin-bottom: 35px;
+    width: 100%;
 }
 
 .environment {
-  border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .gotresult {
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
-  color: #363636;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #363636;
 }
 
 .results a, li {
-  font-size: 25px;
-  color: #363636;
+    font-size: 25px;
+    color: #363636;
 }
 
 .results a:hover {
-  color: #09487A;
-  text-decoration: none;
-  font-size: 120%;
+    color: #09487A;
+    text-decoration: none;
+    font-size: 120%;
 }
 
 .botSpace {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .tab {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
+
 /*========== Results Page =======*/
+
 .resultPage {
-  width: 75%;
-  margin: 15px;
-  color: #363636;
+    width: 75%;
+    margin: 15px;
+    color: #363636;
 }
 
 .mainTitle, .mainCost {
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .mainSummary {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .mainTools, .mainTogether, .mainSend, .mainBonus {
-  font-size: 20px;
+    font-size: 20px;
 }
 
-.family{
-width: 100%;
+.family {
+    width: 100%;
 }
+
 
 /*============= About & Submit Page ===========*/
+
 .pageStyle {
-  width: 75%;
-  margin: 15px;
-  color: #363636;
-  font-family: 'Raleway', sans-serif;
+    width: 75%;
+    margin: 15px;
+    color: #363636;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .pageStyle h2, .pageStyle p, .pageStyle li {
@@ -151,34 +153,35 @@ p {
     font-size: 20px;
 }
 
+
 /*============= Start Media Queries =============*/
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
 
-  }
+/* Mobile Styles */
+
+@media only screen and (max-width: 400px) {
+    body {}
 }
+
 
 /* Tablet  &&  Desktop */
 
 @media only screen and (min-width: 401px) {
-  .mainIndex {
-    margin-left: 15%;
-    margin-top: 10px;
-  }
-  .main img {
-    height: 150px;
-    margin: 0 auto;
-    margin-top: 5px;
-    padding: 0 auto;
-  }
-  h1 {
-    font-size: 30px;
-  }
-
-  .family{
-    width: 80%;
-    margin-left: 10%;
-  }
+    .mainIndex {
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+    .main img {
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 5px;
+        padding: 0 auto;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .family {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
