@@ -163,7 +163,7 @@ p {
 
 /* Tablet  &&  Desktop */
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 401px) and (max-width: 1223px) {
     .mainIndex {
         margin-left: 15%;
         margin-top: 10px;
@@ -181,4 +181,52 @@ p {
         width: 80%;
         margin-left: 10%;
     }
+}
+
+@media only screen and (min-width: 1224px) {
+    * {
+        font-size: 30px;
+    }
+    .mainIndex {
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+    .main img {
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 5px;
+        padding: 0 auto;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .family {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .strong {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .gotresult {
+        font-size: 60px;
+    }
+    .results a, li {
+        font-size: 45px;
+    }
+    .mainTitle, .mainCost {
+        font-size: 50px;
+    }
+
+    .mainSummary {
+        font-size: 45px;
+    }
+
+    .mainTools, .mainTogether, .mainSend, .mainBonus {
+        font-size: 40px;
+    }
+    p {
+      font-size: 30px;
+    }
+
 }
