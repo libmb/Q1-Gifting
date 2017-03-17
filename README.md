@@ -25,3 +25,7 @@ This is an app that will allow a user to filter for experiential gifts. The gift
 - [First Wireframe](public/assets/images/wf1.jpg)
 - [Second Wireframe](public/assets/images/wf2.jpg)
 - [Initial Schedule](public/assets/images/sched.jpg)
+
+### Contact Me
+
+- [LinkedIn](https://www.linkedin.com/in/michelle-bergquist-5a936860/)
