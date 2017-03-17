@@ -18,3 +18,8 @@ This is an app that will allow a user to filter for experiential gifts. The gift
 - Sketch
 - JSON
 - Bootstrap
+
+## Wireframes
+
+[Wireframe 1](public/assets/images/wf1.jpg)
+[Wireframe 2](public/assets/images/wf2.jpg)
