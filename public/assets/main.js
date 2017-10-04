@@ -72,8 +72,6 @@ function getWeatherForcast (coordinates) {
 // or will this be a .then on getWeatherForcast
 function populateResults (weatherOutcome) {
   var activityLevel = $('#active').val()
-    // var distance = $('#distance').val()
-    // console.log(distance)
   $.get('objects.json')
         .then(function (json) {
           var count = 0
@@ -82,7 +80,6 @@ function populateResults (weatherOutcome) {
                     (weatherOutcome === 'both' || json[i].environment === weatherOutcome || json[i].environment === 'both')) {
               count++
               $('.results').append("<li> <a href='results.html'>" + json[i].title + '</a></li>')
-                    // "<a href='results.html'>" + json[i].title + "</a>" +
             }
           }
           if (count > 1) {
